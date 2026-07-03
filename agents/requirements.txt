@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+groq
+yfinance
+newsapi-python
+python-dotenv
+pydantic
