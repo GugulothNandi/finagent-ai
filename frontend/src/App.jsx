@@ -16,7 +16,8 @@ import {
   Legend,
 } from "recharts";
 
-const API = "http://localhost:5000";
+const API = import.meta.env.VITE_API_URL || "http://localhost:5000";
+const AGENT_API = import.meta.env.VITE_AGENT_URL || "http://localhost:8000";
 
 const agentSteps = [
   {
@@ -135,8 +136,8 @@ export default function App() {
               headers: { Authorization: `Bearer ${token}` },
             },
           ),
-          axios.post(`http://localhost:8000/stockhistory`, { query }),
-          axios.post(`http://localhost:8000/realfinancials`, { query }),
+          axios.post(`${AGENT_API}/stockhistory`, { query }),
+          axios.post(`${AGENT_API}/realfinancials`, { query }),
         ],
       );
 
