@@ -214,41 +214,6 @@ The report includes:
 
 ---
 
-# 📁 Project Structure
-
-```text
-financial-research-platform/
-
-├── frontend/
-│   ├── components/
-│   ├── pages/
-│   ├── services/
-│   └── assets/
-│
-├── backend/
-│   ├── agents/
-│   │   ├── research_agent.py
-│   │   ├── news_agent.py
-│   │   ├── financial_agent.py
-│   │   ├── market_agent.py
-│   │   ├── risk_agent.py
-│   │   ├── sec_agent.py
-│   │   └── report_generator.py
-│   │
-│   ├── api/
-│   ├── database/
-│   ├── models/
-│   ├── services/
-│   ├── vector_db/
-│   ├── reports/
-│   └── main.py
-│
-├── docker-compose.yml
-├── README.md
-└── requirements.txt
-```
-
----
 
 # 🚀 Workflow
 
